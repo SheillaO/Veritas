@@ -170,6 +170,74 @@ export const tweetsData = [
         uuid: 'boomer-code-genuine-5',
     },
 
+        {
+        handle: `@ReallyVirtual 🚁`,
+        profilePic: `images/pakistan.png`,
+        likes: 15400,
+        retweets: 9200,
+        bookmarks: 1200,
+        tweetText: `Helicopter hovering above Abbottabad at 1AM (is a rare event). Go away helicopter before I pull out my giant swatter.`,
+        replies: [
+            {
+                handle: `@BreakingNews`,
+                profilePic: `images/news.png`,
+                tweetText: `Are you seeing any ground activity? Please stay safe.`,
+            }
+        ],
+        isLiked: false,
+        isRetweeted: false,
+        isBookmarked: false,
+        moodTag: 'insight', // He unknowingly live-tweeted the Bin Laden raid
+        verdicts: { verified: 100, disputed: 0, satire: 0 },
+        userVerdict: null,
+        uuid: 'bin-laden-raid-01',
+    },
+    {
+        handle: `@jkrums 🚢`,
+        profilePic: `images/ferry.png`,
+        likes: 42000,
+        retweets: 35000,
+        bookmarks: 5600,
+        tweetText: `There's a plane in the Hudson. I'm on the ferry going to pick up the people. Crazy.`,
+        replies: [
+            {
+                handle: `@CNN`,
+                profilePic: `images/cnn.png`,
+                tweetText: `Can we use this photo on air? Please DM us immediately.`,
+            }
+        ],
+        isLiked: false,
+        isRetweeted: false,
+        isBookmarked: false,
+        moodTag: 'genuine', // The famous "Miracle on the Hudson" tweet
+        verdicts: { verified: 100, disputed: 0, satire: 0 },
+        userVerdict: null,
+        uuid: 'hudson-plane-02',
+    },
+    {
+        handle: `@TheWhiteHouse 🏛️`,
+        profilePic: `images/potus.png`,
+        likes: 1200000,
+        retweets: 650000,
+        bookmarks: 85000,
+        tweetText: `Ahmed’s clock is cool. Want to bring it to the White House? We should inspire more kids like you to like science. It’s what makes America great.`,
+        replies: [
+            {
+                handle: `@AhmedClock`,
+                profilePic: `images/boy.png`,
+                tweetText: `I would love to come! Thank you Mr. President!`,
+            }
+        ],
+        isLiked: false,
+        isRetweeted: false,
+        isBookmarked: false,
+        moodTag: 'hottake', // Obama's famous invite to the "Clock Boy"
+        verdicts: { verified: 90, disputed: 5, satire: 5 },
+        userVerdict: null,
+        uuid: 'white-house-clock-03',
+    },
+
+
 
   // ─── TWEET 1: The Jobfather ──────────────────────────────────────────────────
   {
