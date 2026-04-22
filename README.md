@@ -2,7 +2,8 @@
  
 **Reply sorting that actually works. Community verdicts on every post. Signal over noise.**
  
-<img width="1200" height="630" alt="Veritas Preview" src="https://placeholder-for-your-screenshot.png" />
+<img width="1200" height="630" alt="Veritas" src="https://github.com/user-attachments/assets/79813d1f-34b6-4d64-bdf2-7a3e01ae0ac5" />
+
 <br><br>
  
 [**🚀 Explore the Live Demo**](https://veritasapp.netlify.app/) | [**📂 View Codebase**](https://github.com/SheillaO/Veritas)
@@ -189,24 +190,24 @@ This project is part of a broader portfolio demonstrating product thinking appli
  
 ### Related Projects
  
-**📊 [MoodMap — Emotional Wellness Tracker](https://github.com/YourUsername/MoodMap)**  
+**📊 [MoodMap — Emotional Wellness Tracker](https://github.com/SheillaO/MoodMap-Emotional-Wellness-Tracker)**  
 Privacy-first mental health tracking — Addresses $56B annual economic burden with free, offline-first architecture  
 *Tech: Vanilla JS, LocalStorage API, Blob API for clinical export*  
 *Impact: 12-day average consistency vs 3-day for text-based journals*
  
-**💊 [GLP-1 Companion](https://github.com/YourUsername/GLP-1-Companion)**  
+**💊 [GLP-1 Companion](https://github.com/SheillaO/GLP-1-Companion)**  
 Healthcare utility — Semaglutide/Tirzepatide dose conversion for 40M+ users on weight-loss medications  
 *Tech: Vanilla JS, LocalStorage, FormData API*
  
-**🌊 [Bahari Leads](https://github.com/YourUsername/Bahari-Leads)**  
+**🌊 [Bahari Leads](https://github.com/SheillaO/Bahari-Leads)**  
 B2B SaaS — Lead management Chrome extension for emerging markets  
 *Tech: Chrome Extension API, B2B go-to-market positioning*
  
-**🔐 [GDPR Consent Manager](https://github.com/YourUsername/GDPR-Consent-Manager)**  
+**🔐 [GDPR Consent Manager](https://github.com/SheillaO/GDPR-Consent-Fatigue)**  
 Privacy compliance — Track digital consent across websites in one interface  
 *Tech: Chrome Extension API, GDPR Article 7 compliance*
  
-**🎨 [OldGram](https://github.com/YourUsername/Instagram-Clone)**  
+**🎨 [OldGram](https://github.com/SheillaO/Instagram-Clone)**  
 Social media — Instagram clone with "New to You" filter and sentiment analysis  
 *Tech: Advanced DOM manipulation, localStorage*
  
