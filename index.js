@@ -82,7 +82,7 @@ function handleReplyClick(replyId) {
 }
 
 function handleTweetBtnClick() {
-  const input = document.getElementById('tweet-input')
+ 
   if (!input.value.trim()) return
 
   tweetsData.unshift({
