@@ -6,8 +6,17 @@
 }
 /* Light theme */
 [data-theme="light"] {
-  --bg: #ffffff; --text-primary: #0f1419; --text-secondary: #536471; 
-  --border: #eff3f4; --surface-hover: #f7f9f9;
+  --bg: #ffffff;
+  --text-primary: #0f1419;      /* Dark text */
+  --text-secondary: #536471;    /* Gray text */
+  --text-link: #1d9bf0;         /* Blue links */
+  --border: #eff3f4;            /* Light borders */
+  --surface-hover: #f7f9f9;     /* Hover state */
+  --accent: #1d9bf0;
+  --accent-hover: #1a8cd8;
+  --green: #00ba7c;
+  --amber: #f4900c;
+  --red: #f91880;
 }
 
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -58,16 +67,35 @@ body {
 }
 
 .theme-toggle {
-  background: transparent; border: 1px solid var(--border); color: var(--text-primary);
-  width: 36px; height: 36px; border-radius: 50%; cursor: pointer;
-  display: flex; align-items: center; justify-content: center; margin-bottom: 16px;
-  transition: all 140ms ease-out; align-self: center;
+  background: var(--surface-hover);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  transition: all 200ms ease-out;
+  align-self: center;
 }
-@media (hover: hover) and (pointer: fine) { 
-  .theme-toggle:hover { background: var(--surface-hover); border-color: var(--accent); } 
-}
-.theme-toggle:active { transform: scale(0.9); }
 
+.theme-toggle:hover {
+  background: var(--accent);
+  color: white;
+  transform: scale(1.05);
+  border-color: var(--accent);
+}
+
+.theme-toggle:active {
+  transform: scale(0.95);
+}
+
+.theme-toggle i {
+  font-size: 18px;
+}
 .sidebar-nav { 
   display: flex; flex-direction: column; gap: 2px; flex: 1;
   animation: fadeIn 400ms 100ms cubic-bezier(0.16, 1, 0.3, 1) backwards;
