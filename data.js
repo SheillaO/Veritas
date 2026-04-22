@@ -72,7 +72,7 @@ export const tweetsData = [
   },
 
       {
-        handle: `@TheRealDon 🇺🇸`,
+        handle: `@TheRealDon`,
         profilePic: `images/trump.png`,
         likes: 85400,
         retweets: 22100,
