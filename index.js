@@ -359,3 +359,10 @@ if (icon) {
 
 render()
 
+// Force render on load
+window.addEventListener('DOMContentLoaded', () => {
+  console.log('DOM loaded, rendering feed')
+  console.log('Tweets available:', tweetsData.length)
+  render()
+})
+
