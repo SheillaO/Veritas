@@ -302,7 +302,6 @@ function getFeedHtml() {
           </div>
           <p class="tweet-text">${tweet.tweetText}</p>
           
-          <p class="tweet-text">${tweet.tweetText}</p>
 
 ${tweet.videoUrl ? `
   <a href="${tweet.videoUrl}" target="_blank" rel="noopener" class="video-link">
