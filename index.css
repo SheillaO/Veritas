@@ -285,6 +285,23 @@ textarea::placeholder { color: var(--text-secondary); }
   font-size: 14px; font-weight: 700; padding: 8px 16px; border-radius: 9999px;
   cursor: pointer; transition: background 140ms ease-out; align-self: flex-end;
 }
+
+footer {text-align: center; padding: 40px 20px; background: var(--mv);  color: white; margin-top: 50px; 
+}
+
+footer p {
+  color: white; font-size: 14px; opacity: 0.8; 
+}
+
+
+footer a {
+  color: var(--saffron); text-decoration: none; font-weight: 600; margin: 0 5px; transition: opacity 0.2s;
+}
+
+footer a:hover {
+  text-decoration: underline; opacity: 1;
+}
+
 @media (hover: hover) and (pointer: fine) { .reply-submit-btn:hover { background: var(--accent-hover); } }
 .reply-submit-btn:active { transform: scale(0.95); }
 
