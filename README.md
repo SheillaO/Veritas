@@ -5,7 +5,7 @@
 <img width="1200" height="630" alt="Veritas Preview" src="https://placeholder-for-your-screenshot.png" />
 <br><br>
  
-[**🚀 Explore the Live Demo**](#) | [**📂 View Codebase**](https://github.com/YourUsername/Veritas)
+[**🚀 Explore the Live Demo**](https://veritasapp.netlify.app/) | [**📂 View Codebase**](https://github.com/SheillaO/Veritas)
  
 ---
 ## Problem Statement
@@ -269,7 +269,7 @@ Social media — Instagram clone with "New to You" filter and sentiment analysis
 ## Installation
  
 ```bash
-git clone https://github.com/YourUsername/Veritas.git
+git clone https://github.com/SheillaO/Veritas.git
 cd Veritas
 ```
  
@@ -346,7 +346,7 @@ Product-Minded Developer | Nairobi, Kenya 🇰🇪
  
 Building at the intersection of social infrastructure, privacy, and developer tools.
  
-💼 [LinkedIn](https://www.linkedin.com/in/sheillaolga/) • 🐙 [GitHub](https://github.com/SheillaO)
+💼 [LinkedIn](https://www.linkedin.com/in/sheillaolga/) • 🐙 [GitHub](https://github.com/SheillaO/Veritas)
  
 ---
 
