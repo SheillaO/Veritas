@@ -82,7 +82,8 @@ function handleReplyClick(replyId) {
 }
 
 function handleTweetBtnClick() {
- 
+   console.log("Function Triggered");
+  const input = document.getElementById("tweet-input");
   if (!input.value.trim()) return
 
   tweetsData.unshift({
