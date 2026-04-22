@@ -126,3 +126,39 @@ Real-time crowd consensus. No editorial gatekeeping. No invisible moderation.
 - `render()` — Pure function that rebuilds entire DOM from state
 ---
 
+## Product Decisions
+ 
+### Why Reply Sorting Over Other Features?
+ 
+**Hypothesis:** When users can't parse viral reply threads, they disengage from the platform entirely.
+ 
+**Market Validation:**
+- X has **tested reply sorting since 2024** but never shipped it production-ready
+- Bluesky's growth accelerated when they shipped threaded reply context
+- 60% of Gen Z users cited "algorithm distrust" as reason for leaving X
+**Implementation decision:** Three modes cover every use case:
+- **Most Relevant** — default; surfaces verified accounts and quality replies
+- **Recent** — for breaking news where recency matters
+- **OP-only** — instantly find what the original poster said in their own thread
+### Why Community Verdicts Over Moderator Flags?
+ 
+**Decision drivers:**
+1. **Transparency** — Users see vote counts; nothing is hidden
+2. **Scale** — Crowdsourcing beats editorial teams at volume
+3. **Trust** — Decentralized verification feels less like censorship
+4. **Speed** — Real-time updates vs. waiting for moderator review
+The mechanism is deliberately simple: one vote per user per post. Vote totals are public. The algorithm is transparent ratio math, not a neural network black box.
+ 
+### Why Vanilla JavaScript Over React?
+ 
+**Technical reasoning:**
+1. **State management demonstration** — Shows you understand the fundamentals that frameworks abstract
+2. **Zero build step** — Works on any device, even in low-bandwidth emerging markets
+3. **Learning artifact** — Other developers can fork and modify without webpack/npm knowledge
+4. **Interview signal** — Proves you can solve problems without reaching for dependencies
+**Product reasoning:** Offline-first architecture. No API calls. No server costs. Fork-friendly for open-source contributions.
+ 
+---
+
+
+
