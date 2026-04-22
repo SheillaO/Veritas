@@ -170,16 +170,24 @@ function handleSubmitReply(tweetId) {
 
 // ─── NEW FUNCTION 7: Theme Toggle ─────────────────────────────────────────────
 function handleThemeToggle() {
-  const html = document.documentElement
-  const currentTheme = html.getAttribute('data-theme')
-  const newTheme = currentTheme === 'light' ? 'dark' : 'light'
-  
-  html.setAttribute('data-theme', newTheme)
-  localStorage.setItem('theme', newTheme)
-  
-  // Update icon
-  const icon = document.querySelector('#theme-toggle i')
-  icon.className = newTheme === 'light' ? 'fa-solid fa-moon' : 'fa-solid fa-sun'
+  const html = document.documentElement;
+  const currentTheme = html.getAttribute("data-theme");
+  const newTheme = currentTheme === "light" ? "dark" : "light";
+
+  html.setAttribute("data-theme", newTheme);
+  localStorage.setItem("theme", newTheme);
+
+  // Update icon and label
+  const icon = document.querySelector("#theme-toggle i");
+  const label = document.querySelector(".theme-label");
+
+  if (newTheme === "light") {
+    icon.className = "fa-solid fa-moon";
+    label.textContent = "Dark mode";
+  } else {
+    icon.className = "fa-solid fa-sun";
+    label.textContent = "Light mode";
+  }
 }
 
 // ─── HELPER: Sort Replies by Mode ─────────────────────────────────────────────
@@ -350,14 +358,22 @@ function render() {
 
 // ─── INITIALIZE ───────────────────────────────────────────────────────────────
 // Set theme on load
-const savedTheme = localStorage.getItem('theme') || 'dark'
-document.documentElement.setAttribute('data-theme', savedTheme)
-const icon = document.querySelector('#theme-toggle i')
-if (icon) {
-  icon.className = savedTheme === 'light' ? 'fa-solid fa-moon' : 'fa-solid fa-sun'
+const savedTheme = localStorage.getItem("theme") || "light"; // Changed from 'dark'
+document.documentElement.setAttribute("data-theme", savedTheme);
+const icon = document.querySelector("#theme-toggle i");
+const label = document.querySelector(".theme-label");
+
+if (icon && label) {
+  if (savedTheme === "light") {
+    icon.className = "fa-solid fa-moon";
+    label.textContent = "Dark mode";
+  } else {
+    icon.className = "fa-solid fa-sun";
+    label.textContent = "Light mode";
+  }
 }
 
-render()
+render();
 
 // Force render on load
 window.addEventListener('DOMContentLoaded', () => {
