@@ -4,7 +4,7 @@ export const tweetsData = [
     profilePic: `images/troll.jpg`,
     likes: 27,
     retweets: 10,
-    bookmarks: 0,
+    bookmarks: 67,
     tweetText: `Buy Bitcoin, ETH Make 💰💰💰 low low prices. 
             Guaranteed return on investment. HMU DMs open!!`,
     replies: [],
@@ -21,7 +21,7 @@ export const tweetsData = [
     profilePic: `images/musk.png`,
     likes: 6500,
     retweets: 234,
-    bookmarks: 120, // Added
+    bookmarks: 120,
     tweetText: `I need volunteers for a one-way mission to Mars 🪐. No experience necessary🚀`,
     replies: [
       {
@@ -37,10 +37,10 @@ export const tweetsData = [
     ],
     isLiked: false,
     isRetweeted: false,
-    isBookmarked: false, // Added
-    moodTag: "news", // Added
-    verdicts: { verified: 85, disputed: 5, satire: 0 }, // Added
-    userVerdict: null, // Added
+    isBookmarked: false,
+    moodTag: "news",
+    verdicts: { verified: 85, disputed: 5, satire: 50 },
+    userVerdict: null,
     uuid: "3c23454ee-c0f5-9g9g-9c4b-77835tgs2",
   },
   {
@@ -48,7 +48,7 @@ export const tweetsData = [
     profilePic: `images/flower.png`,
     likes: 10,
     retweets: 3,
-    bookmarks: 2, // Added
+    bookmarks: 87,
     tweetText: `Are you a coder if you only know HTML?`,
     replies: [
       {
@@ -64,197 +64,195 @@ export const tweetsData = [
     ],
     isLiked: false,
     isRetweeted: false,
-    isBookmarked: false, // Added
-    moodTag: `rant`, // Added
-    verdicts: { verified: 0, disputed: 10, satire: 2 }, // Added
-    userVerdict: null, // Added
+    isBookmarked: false,
+    moodTag: `rant`,
+    verdicts: { verified: 0, disputed: 10, satire: 43 },
+    userVerdict: null,
     uuid: "8hy671sff-c0f5-4545-9c4b-1237gyys45",
   },
 
+  {
+    handle: `@TheRealDon`,
+    profilePic: `images/trump.png`,
+    likes: 85400,
+    retweets: 22100,
+    bookmarks: 4500,
+    tweetText: `The so-called "Experts" say I can't code. WRONG! I write the best code. Cleanest syntax anyone has ever seen. Python? Easy. JavaScript? I mastered it in three minutes. C++? A total disaster until I fixed it. BIG LEAGUE!`,
+    replies: [
       {
-        handle: `@TheRealDon`,
-        profilePic: `images/trump.png`,
-        likes: 85400,
-        retweets: 22100,
-        bookmarks: 4500,
-        tweetText: `The so-called "Experts" say I can't code. WRONG! I write the best code. Cleanest syntax anyone has ever seen. Python? Easy. JavaScript? I mastered it in three minutes. C++? A total disaster until I fixed it. BIG LEAGUE!`,
-        replies: [
-            {
-                handle: `@SiliconValleyNerd`,
-                profilePic: `images/glasses.png`,
-                tweetText: `Sir, you just posted a screenshot of your Excel spreadsheets.`,
-            }
-        ],
-        isLiked: false,
-        isRetweeted: false,
-        isBookmarked: false,
-        moodTag: 'hottake',
-        verdicts: { verified: 5, disputed: 90, satire: 5 },
-        userVerdict: null,
-        uuid: 'trump-coding-huge-1',
-    },
-    {
-        handle: `@CryptoBro_99 🚀`,
-        profilePic: `images/ape.png`,
-        likes: 12,
-        retweets: 2,
-        bookmarks: 0,
-        tweetText: `If you aren't waking up at 3:00 AM to stare at candle charts while doing 500 burpees, you simply don't want it enough. Enjoy your 9-5 poverty loop while I retire on Mars with my digital monkey JPEGs. Stay humble.`,
-        replies: [],
-        isLiked: false,
-        isRetweeted: false,
-        isBookmarked: false,
-        moodTag: 'rant',
-        verdicts: { verified: 0, disputed: 10, satire: 90 },
-        userVerdict: null,
-        uuid: 'crypto-hustle-rant-2',
-    },
-    {
-        handle: `@DeepThoughtsAI 🤖`,
-        profilePic: `images/ai.png`,
-        likes: 12400,
-        retweets: 3200,
-        bookmarks: 890,
-        tweetText: `The year is 2026. Human productivity has dropped by 90% because everyone is busy prompt-engineering an AI to write an email that explains why they didn't do any work. The loop is complete.`,
-        replies: [
-            {
-                handle: `@LazyDev`,
-                profilePic: `images/sleepy.png`,
-                tweetText: `I used AI to read this tweet. It said it was "concerning."`,
-            }
-        ],
-        isLiked: false,
-        isRetweeted: false,
-        isBookmarked: false,
-        moodTag: 'insight',
-        verdicts: { verified: 80, disputed: 10, satire: 10 },
-        userVerdict: null,
-        uuid: 'ai-loop-insight-3',
-    },
-    {
-        handle: `@CorporateSurvivor 🏢`,
-        profilePic: `images/suit.png`,
-        likes: 4500,
-        retweets: 1200,
-        bookmarks: 300,
-        tweetText: `Just had a "mandatory fun" team-building zoom call where we had to share our "favorite childhood memories" with the HR manager who just laid off half my department. I’ve never felt more alive.`,
-        replies: [],
-        isLiked: false,
-        isRetweeted: false,
-        isBookmarked: false,
-        moodTag: 'rant',
-        verdicts: { verified: 100, disputed: 0, satire: 0 },
-        userVerdict: null,
-        uuid: 'corp-hell-rant-4',
-    },
-    {
-        handle: `@OldSchoolCoder 👴`,
-        profilePic: `images/keyboard.png`,
-        likes: 900,
-        retweets: 150,
-        bookmarks: 50,
-        tweetText: `Honestly, some days I miss when "The Cloud" just meant it was going to rain and I didn't need 47 different npm packages to center a div. We’ve lost our way.`,
-        replies: [
-            {
-                handle: `@GenZCoder`,
-                profilePic: `images/phone.png`,
-                tweetText: `It's okay grandpa, let's get you back to your COBOL.`,
-            }
-        ],
-        isLiked: false,
-        isRetweeted: false,
-        isBookmarked: false,
-        moodTag: 'genuine',
-        verdicts: { verified: 60, disputed: 20, satire: 20 },
-        userVerdict: null,
-        uuid: 'boomer-code-genuine-5',
-    },
+        handle: `@SiliconValleyNerd`,
+        profilePic: `images/glasses.png`,
+        tweetText: `Sir, you just posted a screenshot of your Excel spreadsheets.`,
+      },
+    ],
+    isLiked: false,
+    isRetweeted: false,
+    isBookmarked: false,
+    moodTag: "hottake",
+    verdicts: { verified: 5, disputed: 90, satire: 5 },
+    userVerdict: null,
+    uuid: "571eb9f9-b6fd-46b4-9ec4-a0e5ff540c6c",
+  },
+  {
+    handle: `@CryptoBro_99 🚀`,
+    profilePic: `images/ape.png`,
+    likes: 12,
+    retweets: 2,
+    bookmarks: 0,
+    tweetText: `If you aren't waking up at 3:00 AM to stare at candle charts while doing 500 burpees, you simply don't want it enough. Enjoy your 9-5 poverty loop while I retire on Mars with my digital monkey JPEGs. Stay humble.`,
+    replies: [],
+    isLiked: false,
+    isRetweeted: false,
+    isBookmarked: false,
+    moodTag: "rant",
+    verdicts: { verified: 1, disputed: 10, satire: 90 },
+    userVerdict: null,
+    uuid: "995a5ebb-a006-4ba2-9b18-375e698fc129",
+  },
+  {
+    handle: `@DeepThoughtsAI 🤖`,
+    profilePic: `images/ai.png`,
+    likes: 12400,
+    retweets: 3200,
+    bookmarks: 890,
+    tweetText: `The year is 2026. Human productivity has dropped by 90% because everyone is busy prompt-engineering an AI to write an email that explains why they didn't do any work. The loop is complete.`,
+    replies: [
+      {
+        handle: `@LazyDev`,
+        profilePic: `images/sleepy.png`,
+        tweetText: `I used AI to read this tweet. It said it was "concerning."`,
+      },
+    ],
+    isLiked: false,
+    isRetweeted: false,
+    isBookmarked: false,
+    moodTag: "insight",
+    verdicts: { verified: 80, disputed: 10, satire: 10 },
+    userVerdict: null,
+    uuid: "943eab06-2438-4aa7-8fea-6ef80c2ea0cc",
+  },
+  {
+    handle: `@CorporateSurvivor 🏢`,
+    profilePic: `images/suit.png`,
+    likes: 4500,
+    retweets: 1200,
+    bookmarks: 300,
+    tweetText: `Just had a "mandatory fun" team-building zoom call where we had to share our "favorite childhood memories" with the HR manager who just laid off half my department. I’ve never felt more alive.`,
+    replies: [],
+    isLiked: false,
+    isRetweeted: false,
+    isBookmarked: false,
+    moodTag: "rant",
+    verdicts: { verified: 100, disputed: 0, satire: 0 },
+    userVerdict: null,
+    uuid: "8efcb57a-0c2b-46e2-8280-b60616c8e39d",
+  },
+  {
+    handle: `@OldSchoolCoder 👴`,
+    profilePic: `images/keyboard.png`,
+    likes: 900,
+    retweets: 150,
+    bookmarks: 50,
+    tweetText: `Honestly, some days I miss when "The Cloud" just meant it was going to rain and I didn't need 47 different npm packages to center a div. We’ve lost our way.`,
+    replies: [
+      {
+        handle: `@GenZCoder`,
+        profilePic: `images/phone.png`,
+        tweetText: `It's okay grandpa, let's get you back to your COBOL.`,
+      },
+    ],
+    isLiked: false,
+    isRetweeted: false,
+    isBookmarked: false,
+    moodTag: "genuine",
+    verdicts: { verified: 60, disputed: 20, satire: 20 },
+    userVerdict: null,
+    uuid: "02199b93-9d87-4f08-8640-c3e669ed2a68",
+  },
 
-        {
-        handle: `@ReallyVirtual 🚁`,
-        profilePic: `images/pakistan.png`,
-        likes: 15400,
-        retweets: 9200,
-        bookmarks: 1200,
-        tweetText: `Helicopter hovering above Abbottabad at 1AM (is a rare event). Go away helicopter before I pull out my giant swatter.`,
-        replies: [
-            {
-                handle: `@BreakingNews`,
-                profilePic: `images/news.png`,
-                tweetText: `Are you seeing any ground activity? Please stay safe.`,
-            }
-        ],
-        isLiked: false,
-        isRetweeted: false,
-        isBookmarked: false,
-        moodTag: 'insight', // He unknowingly live-tweeted the Bin Laden raid
-        verdicts: { verified: 100, disputed: 0, satire: 0 },
-        userVerdict: null,
-        uuid: 'bin-laden-raid-01',
-    },
-    {
-        handle: `@jkrums 🚢`,
-        profilePic: `images/ferry.png`,
-        likes: 42000,
-        retweets: 35000,
-        bookmarks: 5600,
-        tweetText: `There's a plane in the Hudson. I'm on the ferry going to pick up the people. Crazy.`,
-        replies: [
-            {
-                handle: `@CNN`,
-                profilePic: `images/cnn.png`,
-                tweetText: `Can we use this photo on air? Please DM us immediately.`,
-            }
-        ],
-        isLiked: false,
-        isRetweeted: false,
-        isBookmarked: false,
-        moodTag: 'genuine', // The famous "Miracle on the Hudson" tweet
-        verdicts: { verified: 100, disputed: 0, satire: 0 },
-        userVerdict: null,
-        uuid: 'hudson-plane-02',
-    },
-    {
-        handle: `@TheWhiteHouse 🏛️`,
-        profilePic: `images/potus.png`,
-        likes: 1200000,
-        retweets: 650000,
-        bookmarks: 85000,
-        tweetText: `Ahmed’s clock is cool. Want to bring it to the White House? We should inspire more kids like you to like science. It’s what makes America great.`,
-        replies: [
-            {
-                handle: `@AhmedClock`,
-                profilePic: `images/boy.png`,
-                tweetText: `I would love to come! Thank you Mr. President!`,
-            }
-        ],
-        isLiked: false,
-        isRetweeted: false,
-        isBookmarked: false,
-        moodTag: 'hottake', // Obama's famous invite to the "Clock Boy"
-        verdicts: { verified: 90, disputed: 5, satire: 5 },
-        userVerdict: null,
-        uuid: 'white-house-clock-03',
-    },
-
-
+  {
+    handle: `@ReallyVirtual 🚁`,
+    profilePic: `images/pakistan.png`,
+    likes: 15400,
+    retweets: 9200,
+    bookmarks: 1200,
+    tweetText: `Helicopter hovering above Abbottabad at 1AM (is a rare event). Go away helicopter before I pull out my giant swatter.`,
+    replies: [
+      {
+        handle: `@BreakingNews`,
+        profilePic: `images/news.png`,
+        tweetText: `Are you seeing any ground activity? Please stay safe.`,
+      },
+    ],
+    isLiked: false,
+    isRetweeted: false,
+    isBookmarked: false,
+    moodTag: "insight", // He unknowingly live-tweeted the Bin Laden raid
+    verdicts: { verified: 100, disputed: 0, satire: 0 },
+    userVerdict: null,
+    uuid: "796319c6-20ca-4164-b6d7-2deee2f50b25",
+  },
+  {
+    handle: `@jkrums 🚢`,
+    profilePic: `images/ferry.png`,
+    likes: 42000,
+    retweets: 35000,
+    bookmarks: 5600,
+    tweetText: `There's a plane in the Hudson. I'm on the ferry going to pick up the people. Crazy.`,
+    replies: [
+      {
+        handle: `@CNN`,
+        profilePic: `images/cnn.png`,
+        tweetText: `Can we use this photo on air? Please DM us immediately.`,
+      },
+    ],
+    isLiked: false,
+    isRetweeted: false,
+    isBookmarked: false,
+    moodTag: "genuine", // The famous "Miracle on the Hudson" tweet
+    verdicts: { verified: 100, disputed: 0, satire: 0 },
+    userVerdict: null,
+    uuid: "8b815348-46ea-4293-8f1c-cfb923eadaa9",
+  },
+  {
+    handle: `@TheWhiteHouse 🏛️`,
+    profilePic: `images/potus.png`,
+    likes: 1200000,
+    retweets: 650000,
+    bookmarks: 85000,
+    tweetText: `Ahmed’s clock is cool. Want to bring it to the White House? We should inspire more kids like you to like science. It’s what makes America great.`,
+    replies: [
+      {
+        handle: `@AhmedClock`,
+        profilePic: `images/boy.png`,
+        tweetText: `I would love to come! Thank you Mr. President!`,
+      },
+    ],
+    isLiked: false,
+    isRetweeted: false,
+    isBookmarked: false,
+    moodTag: "hottake", // Obama's famous invite to the "Clock Boy"
+    verdicts: { verified: 90, disputed: 5, satire: 5 },
+    userVerdict: null,
+    uuid: "48937138-dbfe-4809-bff4-fc8a95b4a364",
+  },
 
   // ─── TWEET 1: The Jobfather ──────────────────────────────────────────────────
   {
     handle: `@TheJobfather__ ✅`,
-    profilePic: `images/job.png`, // Replace with actual profile pic if you have it
+    profilePic: `images/job.png`,
     retweets: 14,
     likes: 48,
     bookmarks: 4,
     tweetText: `It's not enough to just know you're worth, you have to be willing to let people know that you know your worth. Know yourself, advocate for yourself, big up yourself and no one can ever play in your face. No employer, no friend, no significant other or family. No one.`,
-    replies: [], // Zero replies as you noted
+    replies: [],
     isLiked: false,
     isRetweeted: false,
     isBookmarked: false,
-    moodTag: `genuine`, // Choose: insight, hottake, genuine, or rant
+    moodTag: `genuine`,
     verdicts: { verified: 0, disputed: 0, satire: 0 },
     userVerdict: null,
-    uuid: `8ea6c935-b0f5-4d3e-b855-5185e1f9ace2`, // Unique ID
+    uuid: `8ea6c935-b0f5-4d3e-b855-5185e1f9ace2`,
   },
 
   // ─── TWEET 2: Teneika Askew (AI Layoffs) ─────────────────────────────────────
