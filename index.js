@@ -97,7 +97,7 @@ function handleTweetBtnClick() {
     isRetweeted: false,
     isBookmarked: false,
     moodTag: activeMood,
-    verdicts: { verified: 0, disputed: 0, satire: 0 },
+    verdicts: { verified: 1, disputed: 0, satire: 0 },
     userVerdict: null,
     uuid: uuidv4()
   })
