@@ -65,7 +65,7 @@ export const tweetsData = [
     isLiked: false,
     isRetweeted: false,
     isBookmarked: false, // Added
-    moodTag: `rant`, // Added
+    moodTag: `rant``hottake`, // Added
     verdicts: { verified: 0, disputed: 10, satire: 2 }, // Added
     userVerdict: null, // Added
     uuid: "8hy671sff-c0f5-4545-9c4b-1237gyys45",
