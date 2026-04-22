@@ -286,21 +286,33 @@ textarea::placeholder { color: var(--text-secondary); }
   cursor: pointer; transition: background 140ms ease-out; align-self: flex-end;
 }
 
-footer {text-align: center; padding: 40px 20px; background: var(--mv);  color: white; margin-top: 50px; 
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: var(--bg);
+  margin-top: auto;
 }
 
 footer p {
-  color: white; font-size: 14px; opacity: 0.8; 
+  color: var(--text-secondary); 
+  font-size: 13px;
+  font-family: var(--font);
+  letter-spacing: 0.5px;
 }
 
-
 footer a {
-  color: var(--saffron); text-decoration: none; font-weight: 600; margin: 0 5px; transition: opacity 0.2s;
+  color: var(--accent); 
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 5px;
+  transition: color 0.2s ease-in-out;
 }
 
 footer a:hover {
-  text-decoration: underline; opacity: 1;
+  color: var(--accent-hover);
+  text-decoration: underline;
 }
+
 
 @media (hover: hover) and (pointer: fine) { .reply-submit-btn:hover { background: var(--accent-hover); } }
 .reply-submit-btn:active { transform: scale(0.95); }
