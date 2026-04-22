@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veritas — Signal Over Noise</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="logo">
+      <span class="logo-mark">V</span>
+      <span class="logo-text">eritas</span>
+    </div>
+    
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+      <i class="fa-solid fa-sun"></i>
+    </button>
+
+    <nav class="sidebar-nav">
+      <button class="nav-item active" data-filter="all">
+        <i class="fa-solid fa-signal"></i> Feed
+      </button>
+      <button class="nav-item" data-filter="insight">
+        <i class="fa-solid fa-lightbulb"></i> Insights
+      </button>
+      <button class="nav-item" data-filter="hottake">
+        <i class="fa-solid fa-fire"></i> Hot Takes
+      </button>
+      <button class="nav-item" data-filter="genuine">
+        <i class="fa-solid fa-heart"></i> Genuine
+      </button>
+      <button class="nav-item" data-filter="rant">
+        <i class="fa-solid fa-bolt"></i> Rants
+      </button>
+      <button class="nav-item bookmark-nav" data-filter="bookmarks">
+        <i class="fa-solid fa-bookmark"></i> Bookmarks
+      </button>
+    </nav>
+    <div class="sidebar-footer">
+      <span class="version-tag">Beta 0.1</span>
+    </div>
+  </aside>
+
+  <main>
+    <div class="topbar">
+      <h2 class="feed-title">Your Feed</h2>
+      <div class="trust-legend">
+        <span class="legend-item"><span class="dot green"></span>Verified</span>
+        <span class="legend-item"><span class="dot amber"></span>Disputed</span>
+        <span class="legend-item"><span class="dot gray"></span>Unverified</span>
+      </div>
+    </div>
+
+    <div class="compose-area">
+      <img src="images/scrimbalogo.png" class="profile-pic">
+      <div class="compose-right">
+        <textarea placeholder="What signal are you sending today?" id="tweet-input"></textarea>
+        <div class="compose-controls">
+          <div class="mood-selector">
+            <span class="mood-label">Tag:</span>
+            <button class="mood-btn active" data-mood="insight">💡 Insight</button>
+            <button class="mood-btn" data-mood="hottake">🔥 Hot Take</button>
+            <button class="mood-btn" data-mood="genuine">🙏 Genuine</button>
+            <button class="mood-btn" data-mood="rant">😤 Rant</button>
+          </div>
+          <button id="tweet-btn">Post</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="feed" id="feed"></div>
+  </main>
+
+  <script src="data.js" type="module"></script>
+  <script src="index.js" type="module"></script>
+</body>
+</html>
