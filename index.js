@@ -357,28 +357,25 @@ function render() {
 }
 
 // ─── INITIALIZE ───────────────────────────────────────────────────────────────
-// Set theme on load
-const savedTheme = localStorage.getItem("theme") || "light"; // Changed from 'dark'
-document.documentElement.setAttribute("data-theme", savedTheme);
-const icon = document.querySelector("#theme-toggle i");
-const label = document.querySelector(".theme-label");
+window.addEventListener("DOMContentLoaded", () => {
+  console.log("DOM loaded, initializing app");
 
-if (icon && label) {
-  if (savedTheme === "light") {
-    icon.className = "fa-solid fa-moon";
-    label.textContent = "Dark mode";
-  } else {
-    icon.className = "fa-solid fa-sun";
-    label.textContent = "Light mode";
+  // 1. Handle Theme
+  const savedTheme = localStorage.getItem("theme") || "light";
+  document.documentElement.setAttribute("data-theme", savedTheme);
+
+  const icon = document.querySelector("#theme-toggle i");
+  const label = document.querySelector(".theme-label");
+
+  if (icon && label) {
+    const isLight = savedTheme === "light";
+    icon.className = isLight ? "fa-solid fa-moon" : "fa-solid fa-sun";
+    label.textContent = isLight ? "Dark mode" : "Light mode";
   }
-}
 
-render();
+  // 2. Initialize App State
+  console.log("Tweets available:", tweetsData.length);
+  render();
+});
 
-// Force render on load
-window.addEventListener('DOMContentLoaded', () => {
-  console.log('DOM loaded, rendering feed')
-  console.log('Tweets available:', tweetsData.length)
-  render()
-})
 
